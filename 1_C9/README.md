@@ -28,6 +28,10 @@ AWS Cloud9은 웹 브라우저상으로 코드 작성 및 실행, 디버깅을 �
 
 
 
+
+
+
+
 ## 기본적인 Node.js 앱 만들기
 
 Cloud9에는 기본적으로 Node.js가 설치되어있기에 따로 설치하실 필요는 없습니다.
@@ -40,8 +44,9 @@ Cloud9에는 기본적으로 Node.js가 설치되어있기에 따로 설치하�
 
   ![](./images/newFolder.png)
 
-- 새로운 폴더 이름은 **app**으로 해주세요. (임의로 설정해주셔도 좋습니다.)
 
+
+- 새로운 폴더 이름은 **app**으로 해주세요. (임의로 설정해주셔도 좋습니다.)
 - 터미널에서 **cd 명령어**를 통해 **app 폴더**로 이동합니다.
 
 ```bash
@@ -52,12 +57,16 @@ $ cd app
 
 ![](./images/cdapp.png)
 
+
+
 - 폴더로 알맞게 이동했는지 확인해주세요. 터미널 창 왼쪽에 (ec2-user:~/environment/app $) 라고 뜬다면 성공!
 - npm init 명령어를 이용해 새로운 프로젝트를 만들어주세요. 
 
 ```bash
 $ npm init
 ```
+
+
 
 
 
@@ -70,10 +79,12 @@ $ npm install express body-parser cors --save
 
 
 
+
+
 - 설치가 완료되었다면 왼쪽 브라우저 탭에서 오른쪽 클릭을 통해 **New File**을 선택하고, 이름은 **index.js**로 설정해주세요.
 - **index.js**에 샘플 코드를 작성해주세요.
 
-```
+```javascript
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
@@ -110,6 +121,10 @@ $ node index.js
 
   ![](./images/ipaddress.png)
 
+
+
+
+
 ## 인스턴스 보안 설정
 
 - EC2로 이동해주세요.
@@ -127,6 +142,8 @@ $ node index.js
   > 인바운드 규칙 편집을 통해 포트를 추가적으로 열 수 있습니다. 이번 실습에서는 3000번 포트와, 곧 추가할 MySQL 3306번 포트를 추가합니다.
 
   ![](./images/port.png)
+
+
 
 
 
