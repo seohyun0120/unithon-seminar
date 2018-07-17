@@ -17,6 +17,7 @@ AUSG의 AWS 세미나에 오신것을 환영합니다.
 
 # 시작하기에 앞서..
 
+
 ### 1. AWS 계정
 
 - AWS 계정 만들기 [이동](https://aws.amazon.com/ko/)
