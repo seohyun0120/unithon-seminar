@@ -12,7 +12,7 @@ AWS Cloud9은 웹 브라우저상으로 코드 작성 및 실행, 디버깅을 �
 - AWS Cloud9 서비스로 이동해주세요.
 - Create Environment 버튼을 클릭합니다.
 
-![](/Users/Seohyun/Desktop/DailyProj/unithon-seminar/1_C9/images/createEnvironment.png)
+![](unithon-seminar/1_C9/images/createEnvironment.png)
 
 - 세부 환경을 적어주세요.
 
