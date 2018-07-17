@@ -12,21 +12,19 @@ AWS Cloud9은 웹 브라우저상으로 코드 작성 및 실행, 디버깅을 �
 - AWS Cloud9 서비스로 이동해주세요.
 - Create Environment 버튼을 클릭합니다.
 
-![](./images/createEnvironment.png)
+![](/Users/Seohyun/Desktop/DailyProj/unithon-seminar/1_C9/images/createEnvironment.png)
 
 - 세부 환경을 적어주세요.
 
-![](./images/setting.png)
+![](/Users/Seohyun/Desktop/DailyProj/unithon-seminar/1_C9/images/setting.png)
 
 - 다음과 같이 환경을 설정해주세요.
 
-![](./images/setting_2.png)
+![](/Users/Seohyun/Desktop/DailyProj/unithon-seminar/1_C9/images/setting_2.png)
 
 - Next Step > 설정된 값 다시 한 번 확인 > Create Enviroment
 
 > 이제 EC2가 자동으로 생성됩니다.
-
-
 
 
 
@@ -40,7 +38,7 @@ Cloud9에는 기본적으로 Node.js가 설치되어있기에 따로 설치하�
 
 - 왼쪽 위 파일 브라우저에서 오른쪽 클릭을 통해 새로운 폴더를 만들어주세요. (**New Folder** 클릭)
 
-  ![](./newFolder.png)
+  ![](/Users/Seohyun/Desktop/DailyProj/unithon-seminar/1_C9/images/newFolder.png)
 
 - 새로운 폴더 이름은 **app**으로 해주세요. (임의로 설정해주셔도 좋습니다.)
 
@@ -50,7 +48,7 @@ Cloud9에는 기본적으로 Node.js가 설치되어있기에 따로 설치하�
   $ cd app
   ```
 
-![](./cdapp.png)
+![](/Users/Seohyun/Desktop/DailyProj/unithon-seminar/1_C9/images/cdapp.png)
 
 - 폴더로 알맞게 이동했는지 확인해주세요. 터미널 창 왼쪽에 (ec2-user:~/environment/app $) 라고 뜬다면 성공!
 
@@ -93,4 +91,50 @@ Cloud9에는 기본적으로 Node.js가 설치되어있기에 따로 설치하�
   app.listen(3000)
   ```
 
+
+
+- 터미널에서 해당 앱을 실행합니다. 
+
+- ```javascript
+  $ node index.js
+  ```
+
+- 오른쪽 위 **Share** 버튼을 클릭해주세요. 
+
+  ![](./images/share.png)
+
   
+
+- Links to Share의 IP주소를 확인합니다.
+
+  ![](./images/ipaddress.png)
+
+## 인스턴스 보안 설정
+
+- EC2로 이동해주세요.
+
+- 네트워크 및 보안 --> 보안그룹 으로 이동합니다.
+
+  ![](./images/ec2.png)
+
+
+
+- 해당하는 **보안그룹**을 선택하고 하단의 **인바운드 탭**을 클릭해주세요.
+
+- **편집** 버튼을 누르고 아래와 같이 포트를 추가해준 후 **저장** 버튼을 누릅니다. 
+
+  > 인바운드 규칙 편집을 통해 포트를 추가적으로 열 수 있습니다. 이번 실습에서는 3000번 포트와, 곧 추가할 MySQL 3306번 포트를 추가합니다.
+
+  ![](./images/port.png)
+
+
+
+## 결과확인
+
+- **Share**에서 확인한 IP주소 뒤에 **:3000**을 붙여 확인해봅시다.
+
+- 아래와 같이 출력된다면 성공 :tada:
+
+  ![](./images/serveron.png)
+
+축하드립니다. 다음 세션으로 넘어가주세요.
