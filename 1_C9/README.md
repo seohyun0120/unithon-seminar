@@ -12,15 +12,15 @@ AWS Cloud9은 웹 브라우저상으로 코드 작성 및 실행, 디버깅을 �
 - AWS Cloud9 서비스로 이동해주세요.
 - Create Environment 버튼을 클릭합니다.
 
-![](/Users/Seohyun/Desktop/DailyProj/unithon-seminar/1_C9/images/createEnvironment.png)
+![](./images/createEnvironment.png)
 
 - 세부 환경을 적어주세요.
 
-![](/Users/Seohyun/Desktop/DailyProj/unithon-seminar/1_C9/images/setting.png)
+![](./images/setting.png)
 
 - 다음과 같이 환경을 설정해주세요.
 
-![](/Users/Seohyun/Desktop/DailyProj/unithon-seminar/1_C9/images/setting_2.png)
+![](./images/setting_2.png)
 
 - Next Step > 설정된 값 다시 한 번 확인 > Create Enviroment
 
@@ -38,7 +38,7 @@ Cloud9에는 기본적으로 Node.js가 설치되어있기에 따로 설치하�
 
 - 왼쪽 위 파일 브라우저에서 오른쪽 클릭을 통해 새로운 폴더를 만들어주세요. (**New Folder** 클릭)
 
-  ![](/Users/Seohyun/Desktop/DailyProj/unithon-seminar/1_C9/images/newFolder.png)
+  ![](./images/newFolder.png)
 
 - 새로운 폴더 이름은 **app**으로 해주세요. (임의로 설정해주셔도 좋습니다.)
 
@@ -48,7 +48,7 @@ Cloud9에는 기본적으로 Node.js가 설치되어있기에 따로 설치하�
   $ cd app
   ```
 
-![](/Users/Seohyun/Desktop/DailyProj/unithon-seminar/1_C9/images/cdapp.png)
+![](./images/cdapp.png)
 
 - 폴더로 알맞게 이동했는지 확인해주세요. 터미널 창 왼쪽에 (ec2-user:~/environment/app $) 라고 뜬다면 성공!
 
