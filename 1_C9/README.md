@@ -44,60 +44,61 @@ Cloud9에는 기본적으로 Node.js가 설치되어있기에 따로 설치하�
 
 - 터미널에서 **cd 명령어**를 통해 **app 폴더**로 이동합니다.
 
-- ```bash
-  $ cd app
-  ```
+```bash
+$ cd app
+```
+
+
 
 ![](./images/cdapp.png)
 
 - 폴더로 알맞게 이동했는지 확인해주세요. 터미널 창 왼쪽에 (ec2-user:~/environment/app $) 라고 뜬다면 성공!
-
 - npm init 명령어를 이용해 새로운 프로젝트를 만들어주세요. 
 
-- ```bash
-  $ npm init
-  ```
+```bash
+$ npm init
+```
 
 
 
 - 몇 가지 설정들을 물어보는데 기본값으로 설정해주세요. (enter 계속 입력) 
-
 - 앞으로 사용될 라이브러리들을 미리 설치해주세요. 
 
-- ```bash
-  $ npm install express body-parser cors --save
-  ```
+```bash
+$ npm install express body-parser cors --save
+```
 
 
 
 - 설치가 완료되었다면 왼쪽 브라우저 탭에서 오른쪽 클릭을 통해 **New File**을 선택하고, 이름은 **index.js**로 설정해주세요.
-
 - **index.js**에 샘플 코드를 작성해주세요.
 
-- ```js
-  const express = require('express')
-  const bodyParser = require('body-parser')
-  const cors = require('cors')
-  const app = express()
-  
-  app.use(cors())
-  app.use(bodyParser.json())
-  app.get('/', function (req, res) {
-      res.json({
-          message: "Hello, Unithon! We're AUSG!",
-      })
-  })
-  
-  app.listen(3000)
-  ```
+```
+const express = require('express')
+const bodyParser = require('body-parser')
+const cors = require('cors')
+const app = express()
+
+app.use(cors())
+app.use(bodyParser.json())
+app.get('/', function (req, res) {
+    res.json({
+        message: "Hello, Unithon! We're AUSG!",
+    })
+})
+
+app.listen(3000)
+```
 
 
 
 - 터미널에서 해당 앱을 실행합니다. 
 
-- ```javascript
-  $ node index.js
-  ```
+```
+$ node index.js
+```
+
+
 
 - 오른쪽 위 **Share** 버튼을 클릭해주세요. 
 
