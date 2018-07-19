@@ -42,3 +42,11 @@ AUSG의 AWS 세미나에 오신것을 환영합니다.
 
 
 #### 순서대로 진행해주세요!
+
+1. [AWS Cloud9](./1_C9/README.md)
+2. [AWS S3](./2_S3/README.md)
+3. [AWS RDS](./3_RDS/README.md)
+4. [Sequelize](./4_Sequelize_js/README.md)
+5. [SPA](./5_SPA/README.md)
+6. [삭제 가이드](./6_Delete/README.md)
+
