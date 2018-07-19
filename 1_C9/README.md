@@ -155,5 +155,5 @@ $ node index.js
 
   ![](./images/serveron.png)
 
-축하드립니다. 다음 세션 [AWS S3](./2_S3/README.md) 으로 넘어가주세요.
+축하드립니다. 다음 세션 [AWS S3](/2_S3/README.md) 으로 넘어가주세요.
 
