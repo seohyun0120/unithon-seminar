@@ -49,4 +49,3 @@ AUSG의 AWS 세미나에 오신것을 환영합니다.
 4. [Sequelize](./4_Sequelize_js/README.md)
 5. [SPA](./5_SPA/README.md)
 6. [삭제 가이드](./6_Delete/README.md)
-
